@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cakemix</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+<body>
+    <main>
+        <section class= "main-bg">
+            <header class="header-block" id="header">
+                <nav class="navbar navbar-inverse">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" id="ChangeToggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <div id="navbar-hamburger">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </div>
+                                <div id="navbar-close" class="hidden">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </div>                        
+                            </button>
+                            <a class="navbar-brand" href="#header">
+                                <img src="images/Cakemix.png" alt="logo" class="logo"/>
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <div class="mobile-menu">
+                            <div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#features" class="menu-item">Features</a></li>
+                                <li><a href="#about" class="menu-item">About</a></li>
+                                <li><a href="#newsletter" class="menu-item">Newsletter</a></li>
+                                <li class="sm-hide"><a href="#download" class="menu-item no-padding"><img src="images/download.png" alt="download" class="menu-item menu-img"/></a></li>
+                            </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="intro-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-offset-6 col-sm-6">
+                            <h1 class="page-title">Sweat to your own groove</h1>
+                            <p class="intro-text">
+                                Design custom workout playlists using the music that drives you. Listen to the hits and favorite throwbacks from your own Apple Music or Spotify.                            
+                            </p>
+                            <a href="#contacts" class="orange-button">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="section-title">Features</h2>
+                <h4 class= "subtitle">Best workout music for anything you do</h4>
+                <hr>
+                <div class="row m-t-80">
+                    <div class="col-sm-4">
+                        <div>
+                            <img src="images/run.png" alt="running" class="features-img"/>
+                        </div>
+                        <h3 class="img-title">Running</h3>
+                        <p class="img-subtitle">Set records with playlists optimized for running in different conditions</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div>
+                            <img src="images/cardi.png" alt="cycling" class="features-img"/>
+                        </div>
+                        <h3 class="img-title">Cycling</h3>
+                        <p class="img-subtitle">Get the most out of your cycling classes with music that pushes you further</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div>
+                            <img src="images/interval.png" alt="interval" class="features-img"/>
+                        </div>
+                        <h3 class="img-title">Interval</h3>
+                        <p class="img-subtitle">Conquer intense interval training sessions with songs for any period</p>
+                    </div>
+                </div>
+                <div class="row m-t-80">
+                     <div class="col-sm-4">
+                        <div>
+                            <img src="images/music.png" alt="music" class="features-img"/>
+                        </div>
+                        <h3 class="img-title">All the music</h3>
+                        <p class="img-subtitle">Connect to your Spotify or Apple Music and enjoy thousands of songs</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div>
+                            <img src="images/playlist.png" alt="playlist" class="features-img"/>
+                        </div>
+                        <h3 class="img-title">Playlists</h3>
+                        <p class="img-subtitle">Save playlists for different workouts and choose the one that fits today best</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div>
+                            <img src="images/custom.png" alt="custom" class="features-img"/>
+                        </div>
+                        <h3 class="img-title">Customizable</h3>
+                        <p class="img-subtitle">Easily customize tempo of songs, their order or just simply add your favorites to the playlist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="slider-section">
+            <div class="container">
+                <h2 class="section-title white">Explore it</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-sm-1 ">
+                            <a class="right slider" href="#myCarousel" data-slide="prev">
+                                <div class="right-cont"></div>
+                                <span class="glyphicon glyphicon-menu-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <!-- Wrapper for slides -->
+                        <div class="col-sm-10 col-xs-12">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/phone.png" class="carousel-img desktop" alt="phone">
+                                    <img src="images/phone-mob.png" class="carousel-img mobile" alt="phone">
+                                </div> 
+                                <div class="item">
+                                    <img src="images/phone.png" class="carousel-img desktop" alt="phone">
+                                    <img src="images/phone-mob.png" class="carousel-img mobile" alt="phone">
+                                </div> 
+                                <div class="item">
+                                    <img src="images/phone.png" class="carousel-img desktop" alt="phone">
+                                    <img src="images/phone-mob.png" class="carousel-img mobile" alt="phone">
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-1 ">
+                            <a class="left slider" href="#myCarousel" data-slide="next">
+                                <div class="left-cont"></div>
+                                <span class="glyphicon glyphicon-menu-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter" class="newsletter-section">
+            <div class="container">
+                <h2 class="section-title">Sign Up for the Newsletter</h2>
+                <p class="subtitle no-border">Sign up to receive tips and news about our top playlists</p>
+                <form id="subscriptionForm" method="post" class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-4">
+                            <div class="form-group control-group">
+                                <label class="sr-only control-label" for="name">Name</label>
+                                    <div class="controls">
+                                    <input class="input" type="text"  pattern="[a-zA-Z]+" required maxlength=50 class="form-control alphaonly contacts-input" name="fullName" id="name" placeholder="Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="sr-only control-label" for="email">Email</label>
+                                <input type="email" class="input" required class="form-control contacts-input" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <button type="submit" class="orange-button">Sign up</button>
+                            </div>
+                        </div>
+                    </div>  
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-block">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="row top-border">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#header">
+                                <h4 class="footer-logo">Cakemix</h4>
+                                <h5 class="footer-logo">designed by Messapps</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#download" class="footer-menu-item">Download</a></li>
+                            <li><a href="#features" class="footer-menu-item">Features</a></li>
+                            <li><a href="#about" class="footer-menu-item">About</a></li>
+                            <li><a href="#newsletter" class="footer-menu-item">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="scripts/custom.js"></script> 
+</body>
+</html>
