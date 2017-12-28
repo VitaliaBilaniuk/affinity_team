@@ -18,22 +18,9 @@ $(".carousel").on("touchstart", function(event){
 /*Change mobile menu-icon to cross icon*/
 $(function() {
     $('#ChangeToggle').click(function() {
-        setTimeout(mobileMenu, 400);
         $('#navbar-hamburger').toggleClass('hidden');
-        $('#navbar-close').toggleClass('hidden'); 
+        $('#navbar-close').toggleClass('hidden');
+        $('.main-bg').toggleClass('menu-opened');
     });
 });
 
-/*Mobile menu*/
-function mobileMenu() {
-    if ($('#myNavbar').hasClass('in')){
-        $('.navbar-header').addClass('opened-menu');
-        $('.navbar-brand').hide();
-        $('.navbar-toggle').css('margin-top' , '5px');
-    }
-    else {
-        $('.navbar-header').removeClass('opened-menu'); 
-        $('.navbar-brand').show();
-        $('.navbar-toggle').css('margin-top' , '25px');
-    }   
-}

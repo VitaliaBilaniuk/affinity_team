@@ -152,6 +152,11 @@ body .header-block .navbar-nav li a:hover {
     height: 140px;
 }
 
+.middle-img {
+    margin: 30px auto;
+    height: 100px;
+}
+
 .img-subtitle {
     font-size: 14px;	
     line-height: 18px;	
@@ -301,6 +306,20 @@ h5.footer-logo {
 }
 
 @media (max-width: 768px) {
+
+    .menu-opened .navbar-header {
+        background-color: white;
+        height: 61px;
+    }
+
+    .menu-opened .navbar-brand {
+        display: none;
+    }
+
+    .menu-opened .navbar-toggle {
+        margin-top: 5px;
+    }
+
     .carousel-inner>.item>img.mobile {
         display: block;
     }
@@ -329,22 +348,17 @@ h5.footer-logo {
         width: 100%;
     }
 
-    .navbar-collapse.collapse.in {
+    .navbar-inverse .navbar-collapse {
         background-color: white;
         border: none;
     }
-
+   
     body .header-block .navbar-nav li {
         z-index: 9999;
     }
 
     .mobile-menu {
         padding: 0 0 40px;
-    }
-
-    .opened-menu {
-        background-color: white;
-        height: 61px;
     }
 
     .intro-section {
