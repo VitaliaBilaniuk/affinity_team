@@ -16,11 +16,10 @@ $(".carousel").on("touchstart", function(event){
 });
 
 /*Change mobile menu-icon to cross icon*/
-$(function() {
+jQuery(function ($) { 
     $('#ChangeToggle').click(function() {
         $('#navbar-hamburger').toggleClass('hidden');
         $('#navbar-close').toggleClass('hidden');
         $('.main-bg').toggleClass('menu-opened');
     });
 });
-

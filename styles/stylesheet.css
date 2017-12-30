@@ -78,7 +78,7 @@ body .header-block .navbar-nav li a:hover {
     margin: 30px 0;
 }
 
-.orange-button {
+.orange-button, .orange-button:focus, .orange-button:active {
     border-radius: 98px;
     height: 75px;	
     background-color: #FFBE58;	
@@ -89,6 +89,7 @@ body .header-block .navbar-nav li a:hover {
     text-transform: uppercase;
     border: none;
     outline: none;
+    text-decoration: none;
 }
 
 .orange-button:hover {
@@ -244,7 +245,7 @@ body .header-block .navbar-nav li a:hover {
     outline: none;
 }
 
-#subscriptionForm {
+.subscriptionForm {
     margin: 65px 0 140px
 }
 
@@ -385,7 +386,7 @@ h5.footer-logo {
         margin: 35px 0;
     }
 
-    #subscriptionForm {
+    .subscriptionForm {
         margin: 65px 0 250px;
     }
 
@@ -412,5 +413,11 @@ h5.footer-logo {
     .main-bg {
         background-position-x: 20%;
     }
+}
+
+@media (max-width: 1200px) {
+   .subscriptionForm .orange-button {
+       margin-top: 15px;
+   }
 }
 /*END OF RESPONSIVE*/

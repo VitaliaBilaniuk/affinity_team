@@ -10,9 +10,7 @@
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="styles/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
     <main>
@@ -167,29 +165,36 @@
             <div class="container">
                 <h2 class="section-title">Sign Up for the Newsletter</h2>
                 <p class="subtitle no-border">Sign up to receive tips and news about our top playlists</p>
-                <form id="subscriptionForm" method="post" class="form-horizontal">
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-4">
-                            <div class="form-group control-group">
-                                <label class="sr-only control-label" for="name">Name</label>
-                                    <div class="controls">
-                                    <input class="input" type="text"  pattern="[a-zA-Z]+" required maxlength=50 class="form-control alphaonly contacts-input" name="fullName" id="name" placeholder="Name">
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="https://cakemix.us17.list-manage.com/subscribe/post?u=7d952829dae56dd311c3e0edb&amp;id=730cc88014" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscriptionForm" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-4">
+                                    <div class="mc-field-group">
+                                        <label for="mce-NAME"></label>
+                                        <input type="text" value="" name="NAME" class="required input" id="mce-NAME" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL"></label>
+                                        <input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" placeholder="Email">
+                                    </div>     
+                                </div>
+                                <div class="col-md-2">
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7d952829dae56dd311c3e0edb_730cc88014" tabindex="-1" value=""></div>
+                                    <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button orange-button"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="sr-only control-label" for="email">Email</label>
-                                <input type="email" class="input" required class="form-control contacts-input" id="email" name="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <button type="submit" class="orange-button">Sign up</button>
-                            </div>
-                        </div>
-                    </div>  
-                </form>
+                    </form>
+                </div>
+                <!--End mc_embed_signup-->
             </div>
         </section>
     </main>
@@ -217,6 +222,9 @@
             </div>
         </nav>
     </footer>
-    <script src="scripts/custom.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+    <script src="scripts/custom.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> 
 </body>
 </html>
