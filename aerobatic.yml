@@ -1,0 +1,6 @@
+id: bedca64f-f1fa-420b-8f38-e090e7abf60f
+deploy:
+  ignore: []
+  directory: .
+plugins:
+  - name: webpage

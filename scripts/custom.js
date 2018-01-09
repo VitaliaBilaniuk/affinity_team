@@ -23,3 +23,4 @@ jQuery(function ($) {
         $('.main-bg').toggleClass('menu-opened');
     });
 });
+

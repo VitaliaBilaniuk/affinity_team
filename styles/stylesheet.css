@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+
 html body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     position: relative;
 }
+
 
 .main-bg {
     background: url('../images/bg.png');
@@ -66,6 +68,7 @@ body .header-block .navbar-nav li a:hover {
 .page-title {
     font-size: 64px;
     color: white;
+    z-index: 0;
 }
 
 .intro-section {
@@ -76,6 +79,7 @@ body .header-block .navbar-nav li a:hover {
     font-size: 24px;
     color: white;
     margin: 30px 0;
+    font-weight: 500;
 }
 
 .orange-button, .orange-button:focus, .orange-button:active {
@@ -89,7 +93,9 @@ body .header-block .navbar-nav li a:hover {
     text-transform: uppercase;
     border: none;
     outline: none;
+    font-weight: bold;
     text-decoration: none;
+    line-height: 1.6;
 }
 
 .orange-button:hover {
@@ -128,14 +134,13 @@ body .header-block .navbar-nav li a:hover {
     line-height: 30px;	
     text-align: center;
     margin: auto;
-    max-width: 460px;
     padding-bottom: 20px;
 }
 
 .features-section hr{
     height: 7px;
     background-color: #FFBE58;
-    width: 210px;
+    width: 350px;
     margin: 0 auto;
 }
 
@@ -147,15 +152,16 @@ body .header-block .navbar-nav li a:hover {
 }
 
 .features-img {
-    max-width: 150px;
     display: block;
     margin: auto;
-    height: 140px;
+}
+
+.first-img {
+    margin: 0 auto 80px;
 }
 
 .middle-img {
-    margin: 30px auto;
-    height: 100px;
+    margin: 30px auto 90px;
 }
 
 .img-subtitle {
@@ -163,6 +169,8 @@ body .header-block .navbar-nav li a:hover {
     line-height: 18px;	
     text-align: center;
     color: #929292;
+    margin: auto;
+    max-width: 210px;
 }
 
 .m-t-80 {
@@ -172,51 +180,134 @@ body .header-block .navbar-nav li a:hover {
 /*END OF FEATURES SECTION*/
 
 /*SLIDER SECTION*/
+.desktop .carousel {
+    position: absolute;
+}
 
 .white {
     color: white;
 }
 
 .slider-section {
-    padding: 140px 0;
+    padding: 140px 0 40px;
     background: url('../images/bg2.png');
     background-size: cover;
+    position: relative;
+}
+
+.slider-section .section-title {
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.second-row {
+    position: absolute;
+    top: -19px;
+    left: 160px;
+    right: 160px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.second-row .carousel-img {
+    width: 325px;
+}
+
+.top-row.carousel-img {
+    width: 350px;
+}
+
+.middle-row {
+    position: absolute;
+    top: -40px;
+    right: 315px;
 }
 
 .carousel-img {
-    width: 500px;
+    width: 300px;
     display: block;
     margin: auto;
 }
 
-.carousel .glyphicon {
-    top: 65px;
+#about .glyphicon {
+    top: 265px;
     font-size: 40px;
     color: white;
 }
 
-.carousel .carousel-indicators {
-    bottom: -50px;
+.slider-section .carousel-indicators {
+    bottom: 15px;
     display: none;
 }
 
-.carousel .carousel-indicators li{
+.slider-section .carousel-indicators li{
     background-color: white;
 }
 
-.carousel .carousel-indicators li.active{
+.slider-section .carousel-indicators li.active{
     background-color: #37D1D3;
     border-color: #37D1D3;
 }
 
-.carousel-inner>.item>img.mobile {
+.mobile {
     display: none;
 }
 
-.carousel-inner>.item>img.desktop {
+.desktop {
     display: block;
 }
 
+.carousel-inner>.item>img.phone-inner {
+    width: 170px;
+    height: 125px;
+}
+
+.third .carousel-inner>.item>img.phone-inner,
+.fourth .carousel-inner>.item>img.phone-inner {
+    height: 135px;
+}
+
+.fifth .carousel-inner>.item>img.phone-inner {
+    width: 235px;
+    height: 147px;
+}
+
+.first {
+    top: 106px;
+    left: 67px;
+}
+
+.second {
+    right: 61px;
+    top: 106px;
+}
+
+.third {
+    top: 115px;
+    left: 56px;
+    height: 135px;
+}
+
+.fourth {
+    top: 115px;
+    right: 50px;
+    height: 135px;
+}
+
+.fifth {
+    top: 123px;
+    left: 61px;
+}
 /*END OF SLIDER SECTION*/
 
 /*NEWSLETTER SECTION*/
@@ -232,10 +323,13 @@ body .header-block .navbar-nav li a:hover {
     background-size: cover;
 }
 
+.newsletter-section .subtitle {
+    max-width: 500px;
+}
+
 .input {
     border: 1px solid #98F9E4;	
     border-radius: 37.5px;	
-    box-shadow: inset -1px 2px 18px 0 rgba(194,249,237,0.57);
     height: 75px;	
     padding: 0 0 0 35px;
     color: #929292;	
@@ -276,10 +370,15 @@ body .header-block .navbar-nav li a:hover {
     padding: 0 !important;
 }
 
+.footer-logo {
+    margin: 2px 0;
+}
+
 h4.footer-logo {
     color: #606060;	
     font-size: 24px;	
     line-height: 29px;
+    font-weight: normal;
 }
 
 h5.footer-logo {
@@ -287,6 +386,10 @@ h5.footer-logo {
     font-size: 17px;	
     font-weight: 300;	
     line-height: 20px;
+}
+
+.footer-logo a {
+    color: #606060;
 }
 
 .footer-menu-item {
@@ -307,6 +410,16 @@ h5.footer-logo {
 }
 
 @media (max-width: 768px) {
+    #myCarousel6 {
+        position: absolute;
+        top: 19%;
+        left: 34%;
+   }
+
+   .carousel-inner>.item>img.phone-inner {
+        width: 206px;
+        height: 128px;
+   }
 
     .menu-opened .navbar-header {
         background-color: white;
@@ -321,11 +434,15 @@ h5.footer-logo {
         margin-top: 5px;
     }
 
-    .carousel-inner>.item>img.mobile {
+    .mobile {
         display: block;
     }
 
-    .carousel-inner>.item>img.desktop {
+    .mobile img {
+        width: 300px;
+    }
+
+    .desktop {
         display: none;
     }
 
@@ -355,7 +472,7 @@ h5.footer-logo {
     }
    
     body .header-block .navbar-nav li {
-        z-index: 9999;
+        z-index: 10;
     }
 
     .mobile-menu {
@@ -374,11 +491,11 @@ h5.footer-logo {
         height: auto;
     }
 
-    .carousel .carousel-indicators {
+    #about .carousel-indicators {
         display: block;
     }
 
-    .carousel .glyphicon {
+    #about .glyphicon {
         display: none;
     }
 
@@ -394,12 +511,26 @@ h5.footer-logo {
         background: url('../images/bg-mob.png');
         background-size: cover;
     }
+
+    .navbar-header .navbar-brand {
+        float: none;
+        padding: 15px 0;
+    }
+
+    .navbar-header {
+        display: block;
+        margin-left: 15px;    
+    }
 }
 
 @media (max-width: 991px) {
     .input {
         display: block;
         margin: 0 auto;
+    }
+
+    #about .glyphicon {
+        top: 130px;
     }
 
     .newsletter-section .orange-button {
@@ -413,11 +544,141 @@ h5.footer-logo {
     .main-bg {
         background-position-x: 20%;
     }
+
+    .carousel-img {
+        width: 220px;
+    }
+ 
+    .second-row {
+         left: 70px;
+         right: 70px;
+    }
+ 
+    .second-row .carousel-img {
+        width: 240px;
+    }
+ 
+    .top-row.carousel-img {
+        width: 260px;
+        top: -38px;
+        right: 180px;
+    }
+
+    .middle-row {
+        right: 185px;
+    }
+
+    .first {
+        top: 77px;
+        left: 53px;
+   }
+
+   .second {
+        top: 77px;
+        right: 49px;
+   }
+
+   .third {
+        top: 84px;
+        left: 41px;
+   }
+
+   .fourth {
+        top: 84px;
+        right: 37px;
+   }
+
+   .fifth {
+        top: 91px;
+        left: 45px;
+   }
+   
+   .first .carousel-inner>.item>img.phone-inner,
+   .second .carousel-inner>.item>img.phone-inner {
+        width: 170px;
+        height: 93px;
+   }
+
+   .third .carousel-inner>.item>img.phone-inner,
+   .fourth .carousel-inner>.item>img.phone-inner {
+        height: 101px;
+    }
+
+    .fifth .carousel-inner>.item>img.phone-inner {
+        width: 175px;
+        height: 109px;
+    }
 }
 
 @media (max-width: 1200px) {
-   .subscriptionForm .orange-button {
-       margin-top: 15px;
+    .subscriptionForm .orange-button {
+        margin-top: 15px;
+    } 
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+   .carousel-img {
+       width: 260px;
    }
+
+   .second-row {
+        left: 110px;
+        right: 110px;
+   }
+
+   .second-row .carousel-img {
+       width: 290px;
+   }
+
+   .top-row.carousel-img {
+        width: 320px;
+        top: -46px;
+        right: 240px;
+   }
+
+   .middle-row {
+        right: 243px;
+   }
+
+   .first {
+        top: 91px;
+        left: 60px;
+   }
+
+   .second {
+        top: 91px;
+        right: 55px;
+   }
+
+   .third {
+        top: 102px;
+        left: 50px;
+   }
+
+   .fourth {
+        top: 102px;
+        right: 44px;
+   }
+
+   .fifth {
+        top: 113px;
+        left: 55px;
+   }
+
+   .first .carousel-inner>.item>img.phone-inner,
+   .second .carousel-inner>.item>img.phone-inner {
+        width: 170px;
+        height: 109px;
+   }
+
+   .third .carousel-inner>.item>img.phone-inner,
+   .fourth .carousel-inner>.item>img.phone-inner {
+        height: 121px;
+    }
+
+    .fifth .carousel-inner>.item>img.phone-inner {
+        width: 216px;
+        height: 134px;
+    }
 }
 /*END OF RESPONSIVE*/
