@@ -21,6 +21,7 @@ html body {
 
 .navbar {
     min-height: 85px;
+    z-index: 100;
 }
 
 body .header-block .navbar-nav li a {
@@ -512,7 +513,7 @@ h5.footer-logo {
         background-size: cover;
     }
 
-    .navbar-header .navbar-brand {
+    .footer-block .navbar-header .navbar-brand {
         float: none;
         padding: 15px 0;
     }
