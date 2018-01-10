@@ -22,5 +22,9 @@ jQuery(function ($) {
         $('#navbar-close').toggleClass('hidden');
         $('.main-bg').toggleClass('menu-opened');
     });
+
+    $('.carousel').carousel({
+        interval: false 
+    });
 });
 
