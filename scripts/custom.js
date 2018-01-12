@@ -23,8 +23,33 @@ jQuery(function ($) {
         $('.main-bg').toggleClass('menu-opened');
     });
 
-    $('.carousel').carousel({
-        interval: false 
-    });
+    $(document).ready(function(){
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 5,
+            responsive: [
+              {
+                breakpoint: 1200,
+                settings: {
+                  arrows: true,
+                  centerMode: true,
+                  centerPadding: '120px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 991,
+                settings: {
+                  arrows: true,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              }
+            ]
+          });
+      });
 });
+
 

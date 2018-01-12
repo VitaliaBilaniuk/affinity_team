@@ -208,30 +208,8 @@ body .header-block .navbar-nav li a:hover {
     right: 160px;
 }
 
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
 .clear {
     clear: both;
-}
-
-.second-row .carousel-img {
-    width: 325px;
-}
-
-.top-row.carousel-img {
-    width: 350px;
-}
-
-.middle-row {
-    position: absolute;
-    top: -40px;
-    right: 315px;
 }
 
 .carousel-img {
@@ -240,14 +218,8 @@ body .header-block .navbar-nav li a:hover {
     margin: auto;
 }
 
-#about .glyphicon {
-    top: 265px;
-    font-size: 40px;
-    color: white;
-}
-
 .slider-section .carousel-indicators {
-    bottom: 15px;
+    bottom: -20px;
     display: none;
 }
 
@@ -267,48 +239,46 @@ body .header-block .navbar-nav li a:hover {
 .desktop {
     display: block;
 }
-
-.carousel-inner>.item>img.phone-inner {
-    width: 170px;
-    height: 125px;
+.cl {
+    padding: 10px 0;
+    height: 400px;
 }
 
-.third .carousel-inner>.item>img.phone-inner,
-.fourth .carousel-inner>.item>img.phone-inner {
-    height: 135px;
+.slick-active { 
+    padding: 20px 0; 
 }
 
-.fifth .carousel-inner>.item>img.phone-inner {
-    width: 235px;
-    height: 147px;
+.slick-center { 
+    transform: scale(1.2) 
 }
 
-.first {
-    top: 106px;
-    left: 67px;
+.slick-slide:not(.slick-active) { 
+    margin: 20px 0; 
 }
 
-.second {
-    right: 61px;
-    top: 106px;
+.child { 
+    width:100%; 
 }
 
-.third {
-    top: 115px;
-    left: 56px;
-    height: 135px;
+.slide:not(.slick-active) { 
+    cursor: pointer; 
 }
 
-.fourth {
-    top: 115px;
-    right: 50px;
-    height: 135px;
+.slick-track:focus {
+    outline: none;
 }
 
-.fifth {
-    top: 123px;
-    left: 61px;
+.desktop button.slick-next:before {
+    content: ">";
+    font-weight: bold;
+    font-size: 40px;
 }
+.desktop button.slick-prev:before {
+    content: "<";
+    font-weight: bold;
+    font-size: 40px;
+}
+
 /*END OF SLIDER SECTION*/
 
 /*NEWSLETTER SECTION*/
@@ -411,17 +381,6 @@ h5.footer-logo {
 }
 
 @media (max-width: 768px) {
-    #myCarousel6 {
-        position: absolute;
-        top: 19%;
-        left: 34%;
-   }
-
-   .carousel-inner>.item>img.phone-inner {
-        width: 206px;
-        height: 128px;
-   }
-
     .menu-opened .navbar-header {
         background-color: white;
         height: 61px;
@@ -550,64 +509,8 @@ h5.footer-logo {
         width: 220px;
     }
  
-    .second-row {
-         left: 70px;
-         right: 70px;
-    }
- 
-    .second-row .carousel-img {
-        width: 240px;
-    }
- 
-    .top-row.carousel-img {
-        width: 260px;
-        top: -38px;
-        right: 180px;
-    }
-
-    .middle-row {
-        right: 185px;
-    }
-
-    .first {
-        top: 77px;
-        left: 53px;
-   }
-
-   .second {
-        top: 77px;
-        right: 49px;
-   }
-
-   .third {
-        top: 84px;
-        left: 41px;
-   }
-
-   .fourth {
-        top: 84px;
-        right: 37px;
-   }
-
-   .fifth {
-        top: 91px;
-        left: 45px;
-   }
-   
-   .first .carousel-inner>.item>img.phone-inner,
-   .second .carousel-inner>.item>img.phone-inner {
-        width: 170px;
-        height: 93px;
-   }
-
-   .third .carousel-inner>.item>img.phone-inner,
-   .fourth .carousel-inner>.item>img.phone-inner {
-        height: 101px;
-    }
-
-    .fifth .carousel-inner>.item>img.phone-inner {
-        width: 175px;
-        height: 109px;
+    .cl {
+        height: 300px;
     }
 }
 
@@ -621,65 +524,5 @@ h5.footer-logo {
    .carousel-img {
        width: 260px;
    }
-
-   .second-row {
-        left: 110px;
-        right: 110px;
-   }
-
-   .second-row .carousel-img {
-       width: 290px;
-   }
-
-   .top-row.carousel-img {
-        width: 320px;
-        top: -46px;
-        right: 240px;
-   }
-
-   .middle-row {
-        right: 243px;
-   }
-
-   .first {
-        top: 91px;
-        left: 60px;
-   }
-
-   .second {
-        top: 91px;
-        right: 55px;
-   }
-
-   .third {
-        top: 102px;
-        left: 50px;
-   }
-
-   .fourth {
-        top: 102px;
-        right: 44px;
-   }
-
-   .fifth {
-        top: 113px;
-        left: 55px;
-   }
-
-   .first .carousel-inner>.item>img.phone-inner,
-   .second .carousel-inner>.item>img.phone-inner {
-        width: 170px;
-        height: 109px;
-   }
-
-   .third .carousel-inner>.item>img.phone-inner,
-   .fourth .carousel-inner>.item>img.phone-inner {
-        height: 121px;
-    }
-
-    .fifth .carousel-inner>.item>img.phone-inner {
-        width: 216px;
-        height: 134px;
-    }
 }
 /*END OF RESPONSIVE*/
