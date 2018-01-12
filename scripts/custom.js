@@ -22,7 +22,7 @@ jQuery(function ($) {
         $('#navbar-close').toggleClass('hidden');
         $('.main-bg').toggleClass('menu-opened');
     });
-
+/*Carousel enable */
     $(document).ready(function(){
         $('.center').slick({
             centerMode: true,

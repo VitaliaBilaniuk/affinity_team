@@ -141,7 +141,7 @@ body .header-block .navbar-nav li a:hover {
 .features-section hr{
     height: 7px;
     background-color: #FFBE58;
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
 }
 
@@ -429,6 +429,8 @@ h5.footer-logo {
     .navbar-inverse .navbar-collapse {
         background-color: white;
         border: none;
+        position: relative;
+        z-index: 101;
     }
    
     body .header-block .navbar-nav li {
