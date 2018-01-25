@@ -200,16 +200,6 @@ body .header-block .navbar-nav li a:hover {
     position: relative;
 }
 
-.inside-phone {
-    position: absolute;
-    top: 42px;
-    border-radius: 5px;
-    width: 151px;
-    left: 32px;
-    right: 0;
-    height: 312px;
-}
-
 .slider-section .section-title {
     font-weight: 300;
     margin-bottom: 70px;
@@ -255,8 +245,8 @@ body .header-block .navbar-nav li a:hover {
 }
 
 .cl {
-    padding: 10px 0;
-    height: 400px;
+    padding: 20px 15px;
+    width: 100%;
 }
 
 .slick-active { 
@@ -525,23 +515,6 @@ h5.footer-logo {
     .carousel-img {
         width: 220px;
     }
- 
-    .cl {
-        height: 300px;
-    }
-
-    .inside-phone {
-        top: 40px;
-        border-radius: 5px;
-        width: 111px;
-        left: 23px;
-        right: 0;
-        height: 230px;
-    }
-
-    .slick-slide:not(.slick-active) .inside-phone{ 
-        height: 210px;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -557,6 +530,6 @@ h5.footer-logo {
 
    .slick-slide:not(.slick-active) .inside-phone{ 
     height: 293px;
-}
+    }
 }
 /*END OF RESPONSIVE*/
