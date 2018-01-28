@@ -6,9 +6,8 @@ html body {
     position: relative;
 }
 
-
 .main-bg {
-    background: url('../images/bg.png');
+    background: url('../images/bg-mob.png');
     background-size: cover;
 }
 
@@ -74,6 +73,27 @@ body .header-block .navbar-nav li a:hover {
 
 .intro-section {
     padding: 40px 0 100px;
+    position: relative
+}
+
+.absolute {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.top-phone {
+    width: 250px;
+    position: relative;
+    height: 399px;
+}
+
+.video {
+    position: absolute;
+    top: 2%;
+    width: 200px;
+    left: 10%;
+    border-radius: 3%;
 }
 
 .intro-text {
@@ -472,11 +492,6 @@ h5.footer-logo {
 
     .subscriptionForm {
         margin: 65px 0 250px;
-    }
-
-    .main-bg {
-        background: url('../images/bg-mob.png');
-        background-size: cover;
     }
 
     .footer-block .navbar-header .navbar-brand {
