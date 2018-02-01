@@ -548,3 +548,10 @@ h5.footer-logo {
     }
 }
 /*END OF RESPONSIVE*/
+svg {
+    position: absolute;
+    bottom: 57px;
+    width: 519px;
+    height: 146px;
+  }
+
