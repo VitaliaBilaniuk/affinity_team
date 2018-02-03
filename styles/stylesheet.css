@@ -83,16 +83,16 @@ body .header-block .navbar-nav li a:hover {
 }
 
 .top-phone {
-    width: 403px;
+    width: 393px;
     position: relative;
-    height: 622px;
+    height: 620px;
 }
 
 .video {
     position: absolute;
-    top: 3%;
-    width: 290px;
-    left: 15%;
+    top: 9%;
+    width: 275px;
+    left: 16%;
     border-radius: 3%;
 }
 
@@ -530,6 +530,14 @@ h5.footer-logo {
     .carousel-img {
         width: 220px;
     }
+
+    .wrap svg {
+        width: 352px;
+    }
+
+      .absolute {
+        top: 12%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -551,7 +559,7 @@ h5.footer-logo {
 svg {
     position: absolute;
     bottom: 57px;
-    width: 519px;
+    width: 520px;
     height: 146px;
   }
 
