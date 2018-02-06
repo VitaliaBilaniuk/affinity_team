@@ -405,7 +405,7 @@ h5.footer-logo {
     } 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .menu-opened .navbar-header {
         background-color: white;
         height: 61px;
