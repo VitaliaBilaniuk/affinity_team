@@ -9,7 +9,6 @@ html body {
 .main-bg {
     background: url('../images/bg_1.png');
     background-size: cover;
-    background-position-y: bottom;
 }
 
 /*HEADER*/
@@ -74,7 +73,8 @@ body .header-block .navbar-nav li a:hover {
 
 .intro-section {
     padding: 40px 0 100px;
-    position: relative
+    position: relative;
+    overflow: hidden;
 }
 
 .absolute {
@@ -139,11 +139,7 @@ body .header-block .navbar-nav li a:hover {
     position: absolute;
     width: 100%;
     z-index: 2;
-    bottom: -50px;
-    background: url('../images/wave.png');
-    background-size: cover;
-    background-position-y: bottom;
-    height: 200px;
+    bottom: -9px;
 }
 /*END OF INTRO SECTION*/
 
@@ -521,10 +517,10 @@ h5.footer-logo {
 }
 
 @media (max-width: 991px) {
-    .slick-next {
+    .desktop .slick-next {
         right: -15px;
     }
-    
+
     .input {
         display: block;
         margin: 0 auto;
@@ -558,9 +554,6 @@ h5.footer-logo {
         top: 10%;
     }
 
-    .wave {
-        bottom: -1px;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -578,6 +571,18 @@ h5.footer-logo {
     height: 293px;
     }
 }
+
+@media (min-width: 1200px) {
+    .main-bg {
+        background-position-y: bottom;
+    }
+
+    .wave {
+        width: 110%;
+        left: -10%;
+    }
+}
+
 /*END OF RESPONSIVE*/
 
 
