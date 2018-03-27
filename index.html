@@ -2,163 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cakemix</title>
-    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <title>Affinity</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="styles/slick.css">
-    <link rel="stylesheet" type="text/css" href="styles/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
     <main>
-        <section class= "main-bg">
-            <header class="header-block" id="header">
-                <nav class="navbar navbar-inverse">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" id="ChangeToggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                <div id="navbar-hamburger">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </div>
-                                <div id="navbar-close" class="hidden">
-                                    <span class="glyphicon glyphicon-remove"></span>
-                                </div>                        
-                            </button>
-                            <a class="navbar-brand" href="#header">
-                                <img src="images/Cakemix.png" alt="logo" class="logo"/>
-                            </a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="myNavbar">
-                            <div class="mobile-menu">
-                            <div>
-                            <ul class="nav navbar-nav">
-                                <li><a href="#features" class="menu-item">Features</a></li>
-                                <li><a href="#about" class="menu-item">About</a></li>
-                                <li><a href="#newsletter" class="menu-item">Newsletter</a></li>
-                                <li class="sm-hide"><a href="#download" class="menu-item no-padding"><img src="images/download.png" alt="download" class="menu-item menu-img"/></a></li>
-                            </ul>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-            <section class="intro-section">
+        <header>
+            <button>Contact us</button>
+        </header>
+        <section class="popup-section">
+            <div class="popup">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-offset-6 col-sm-6">
-                            <h1 class="page-title">Sweat to your own groove</h1>
-                            <p class="intro-text">
-                                Design unique, beat-based playlists to match the intensity of any workout. Connect Cakemix with your Spotify or Apple Music library to get a fully personalized experience                  
-                            </p>
-                            <a href="#contacts" class="orange-button">Download</a>
+                        <div class="col-sm-8 first-part">
+                            <div class="row">
+                                <div class="mobile popup-header">
+                                    <a id="closePopup"> <img class="close" src="images/close.png" alt="close"></a>
+                                    <img src="images/logo.svg" class="logo" alt="logo"> 
+                                </div>
+                                <div class="col-sm-offset-2 col-sm-8">
+                                    <h3>Contact us</h3>
+                                    <p>Tell us about you and we will contact you soon.</p>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="email">Your Еmail</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Full name</label>
+                                            <input type="password" class="form-control" id="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Subject</label>
+                                            <input type="password" class="form-control" id="subject">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comment">Message</label>
+                                            <textarea class="form-control" rows="5" id="message"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                    <div class="mobile">
+                                        <div class="row">
+                                            <div class="col-xs-5"><hr></div>
+                                            <div class="col-xs-2 lines"><span>or</span></div>
+                                            <div class="col-xs-5"><hr></div>
+                                        </div>
+                                        <a href="" class="skype-button">
+                                            <img src="images/skype.svg" alt="logo">
+                                            call us now
+                                        </a>
+                                        <div class="social">
+                                            <p>Follow us</p>
+                                            <a href="">
+                                                <img src="images/fb-m.svg" alt="logo">
+                                            </a>
+                                            <a href="">
+                                                <img src="images/google-m.svg" alt="logo">
+                                            </a>
+                                            <a href="">
+                                                <img src="images/twitter-m.svg" alt="logo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
-                    </div>
-                </div>
-                <div class=" desktop absolute">
-                    <img src="images/frame-bg.png" alt="" class="top-phone"/>
-                    <video autoplay="autoplay" muted class="video" loop>
-                        <source src="images/video.mp4" type="video/mp4">
-                    </video>  
-                </div>
-                <img src="images/wave.png" alt="" class="wave"/>
-            </section>
-        </section>
-        <section id="features" class="features-section">
-            <div class="container">
-                <h2 class="section-title">Features</h2>
-                <h4 class= "subtitle">The best playlist-making app for any workout you do</h4>
-                <hr>
-                <div class="row m-t-80">
-                    <div class="col-sm-4">
-                        <div>
-                            <img src="images/run.png" alt="running" class="features-img first-img"/>
+                        <div class="col-sm-4 second-part desktop">
+                                <a id="closePopup"> <img class="close external" src="images/close.png" alt="close"></a>
+                            <img src="images/logo.svg" class="logo" alt="logo">
+                            <div class="skype-section">
+                                <p>Call to us</p>
+                                <a href="">
+                                    <img src="images/skype.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="social">
+                                <p>Follow us</p>
+                                <a href="">
+                                    <img src="images/fb.svg" alt="logo">
+                                </a>
+                                <a href="">
+                                    <img src="images/google.svg" alt="logo">
+                                </a>
+                                <a href="">
+                                    <img src="images/twitter.svg" alt="logo">
+                                </a>
+                            </div>
                         </div>
-                        <h3 class="img-title">Running</h3>
-                        <p class="img-subtitle">Stay in the zone by running to the beat of your favorite jams</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <div>
-                            <img src="images/cardio.png" alt="cycling" class="features-img middle-img"/>
-                        </div>
-                        <h3 class="img-title">Cycling</h3>
-                        <p class="img-subtitle">Design dynamic, beat-based playlists for any cycling workout</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <div>
-                            <img src="images/interval.png" alt="interval" class="features-img"/>
-                        </div>
-                        <h3 class="img-title">Interval Training</h3>
-                        <p class="img-subtitle">Create customized playlists for interval workouts</p>
-                    </div>
-                </div>
-                <div class="row m-t-80">
-                    <div class="col-sm-4">
-                        <div>
-                            <img src="images/custom.png" alt="custom" class="features-img"/>
-                        </div>
-                        <h3 class="img-title">YOUR music</h3>
-                        <p class="img-subtitle">Connect to your Spotify or Apple Music library for a personalised experience</p>
-                    </div>
-                     <div class="col-sm-4">
-                        <div>
-                            <img src="images/music.png" alt="music" class="features-img"/>
-                        </div>
-                        <h3 class="img-title">Save & edit playlists</h3>
-                        <p class="img-subtitle">Manage a library of playlists for all different types of workouts</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <div>
-                            <img src="images/playlist.png" alt="playlist" class="features-img"/>
-                        </div>
-                        <h3 class="img-title">Keep it fresh</h3>
-                        <p class="img-subtitle">Keep playlists fresh by swiping left to swap out old songs with new favorites</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="slider-section">
+        <section class="intro">
             <div class="container">
-                <h2 class="section-title white">Explore it</h2>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-1">
+                        <h1 class="title">Meet Our Team</h1>
+                        <p class="description">We are actualy way more fun and smiling in real life. But anyway, we’re passionate about digital stuff, and always want to improve our skills and push limits!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
                 <div class="desktop">
-                    <div class="slider center">
-                        <div class="slide">
-                            <img src="images/1_mob.png" class="cl" alt="phone">
+                    <div id="carousel">
+                        <img src="images/1.jpg" id="item-1" />
+                        <div class="img-description">
+                            <h3>David Macedonian</h3>
+                            <h4>Idea, production, API</h4>
+                            <p>Lovely boss. 36 years old.
+                                10+ years of work experience
+                                in digital.</p>
                         </div>
-                        <div class="slide">
-                            <img src="images/2_mob.png" class="cl" alt="phone">
+                        <img src="images/2.jpg" id="item-2" />
+                        <div class="img-description">
+                            <h3>David Macedonian</h3>
+                            <h4>Idea, production, API</h4>
+                            <p>Lovely boss. 36 years old.
+                                10+ years of work experience
+                                in digital.</p>
                         </div>
-                        <div class="slide">
-                            <img src="images/3_mob.png" class="cl" alt="phone">
+                        <img src="images/3.jpg" id="item-3" />
+                        <div class="img-description">
+                            <h3>David Macedonian</h3>
+                            <h4>Idea, production, API</h4>
+                            <p>Lovely boss. 36 years old.
+                                10+ years of work experience
+                                in digital.</p>
                         </div>
-                        <div class="slide">
-                            <img src="images/4_mob.png" class="cl" alt="phone">
+                        <img src="images/4.jpg" id="item-4" />
+                        <div class="img-description">
+                            <h3>David Macedonian</h3>
+                            <h4>Idea, production, API</h4>
+                            <p>Lovely boss. 36 years old.
+                                10+ years of work experience
+                                in digital.</p>
                         </div>
-                        <div class="slide">
-                            <img src="images/5_mob.png" class="cl" alt="phone">
+                        <img src="images/5.jpg" id="item-5" />
+                        <div class="img-description">
+                            <h3>David Macedonian</h3>
+                            <h4>Idea, production, API</h4>
+                            <p>Lovely boss. 36 years old.
+                                10+ years of work experience
+                                in digital.</p>
                         </div>
-                        <div class="slide">
-                            <img src="images/1_mob.png" class="cl" alt="phone">
+                            
+                    </div>
+                    <div class="row carousel-nav">
+                        <div class="col-xs-6">
+                            <a href="#" id="next"><img src="images/arrow.svg" /></a>
                         </div>
-                        <div class="slide">
-                            <img src="images/2_mob.png" class="cl" alt="phone">
+                        <div class="col-xs-6">
+                            <ul id='carousel-custom-dots' class='carousel-dots'> 
+                                <li class='dot'></li> 
+                                <li class='dot'></li> 
+                                <li class='dot'></li> 
+                                <li class='dot'></li>
+                                <li class='dot'></li>
+                            </ul>
                         </div>
-                        <div class="slide">
-                            <img src="images/3_mob.png" class="cl" alt="phone">
-                        </div>
-                        <div class="slide">
-                            <img src="images/4_mob.png" class="cl" alt="phone">
-                        </div>
-                        <div class="slide">
-                            <img src="images/5_mob.png" class="cl" alt="phone">
-                        </div>    
-                    </div>  
+                    </div>
                 </div>
                 <div class="mobile">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -172,90 +183,66 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="images/1_mob.png" class="carousel-img" alt="phone">
+                                <img src="images/1.jpg" id="item-1" />
+                                <div class="img-description">
+                                    <h3>David Macedonian</h3>
+                                    <h4>Idea, production, API</h4>
+                                    <p>Lovely boss. 36 years old.
+                                        10+ years of work experience
+                                        in digital.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <img src="images/2_mob.png" class="carousel-img" alt="phone">
+                                <img src="images/2.jpg" id="item-2" />
+                                <div class="img-description">
+                                    <h3>David Macedonian</h3>
+                                    <h4>Idea, production, API</h4>
+                                    <p>Lovely boss. 36 years old.
+                                        10+ years of work experience
+                                        in digital.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <img src="images/3_mob.png" class="carousel-img" alt="phone">
+                                <img src="images/3.jpg" id="item-3" />
+                                <div class="img-description">
+                                    <h3>David Macedonian</h3>
+                                    <h4>Idea, production, API</h4>
+                                    <p>Lovely boss. 36 years old.
+                                        10+ years of work experience
+                                        in digital.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <img src="images/4_mob.png" class="carousel-img" alt="phone">
+                                <img src="images/4.jpg" id="item-4" />
+                                <div class="img-description">
+                                    <h3>David Macedonian</h3>
+                                    <h4>Idea, production, API</h4>
+                                    <p>Lovely boss. 36 years old.
+                                        10+ years of work experience
+                                        in digital.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <img src="images/5_mob.png" class="carousel-img" alt="phone">
+                                <img src="images/5.jpg" id="item-5" />
+                                <div class="img-description">
+                                    <h3>David Macedonian</h3>
+                                    <h4>Idea, production, API</h4>
+                                    <p>Lovely boss. 36 years old.
+                                        10+ years of work experience
+                                        in digital.</p>
+                                </div>
                             </div>
                         </div>
                     </div>        
-                </div>                 
-            </div>
-        </section>
-        <section id="newsletter" class="newsletter-section">
-            <div class="container">
-                <h2 class="section-title">Sign Up for the Newsletter</h2>
-                <p class="subtitle no-border">Sign up to receive tips and news about our top playlists</p>
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="https://cakemix.us17.list-manage.com/subscribe/post?u=7d952829dae56dd311c3e0edb&amp;id=730cc88014" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscriptionForm" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <div class="row">
-                                <div class="col-md-offset-1 col-md-4">
-                                    <div class="mc-field-group">
-                                        <label for="mce-NAME"></label>
-                                        <input type="text" value="" name="NAME" class="required input" id="mce-NAME" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mc-field-group">
-                                        <label for="mce-EMAIL"></label>
-                                        <input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" placeholder="Email">
-                                    </div>     
-                                </div>
-                                <div class="col-md-2">
-                                    <div id="mce-responses" class="clear">
-                                        <div class="response" id="mce-error-response" style="display:none"></div>
-                                        <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7d952829dae56dd311c3e0edb_730cc88014" tabindex="-1" value=""></div>
-                                    <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button orange-button"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!--End mc_embed_signup-->
-            </div>
+                </div> 
+            </div>    
         </section>
     </main>
     <footer class="footer-block">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="row top-border">
-                    <div class="col-md-3 col-sm-12">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="#header">
-                                <h4 class="footer-logo">Cakemix</h4>
-                            </a>
-                            <h5 class="footer-logo">designed by <a href="http://messapps.com/">Messapps</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-12">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#download" class="footer-menu-item">Download</a></li>
-                            <li><a href="#features" class="footer-menu-item">Features</a></li>
-                            <li><a href="#about" class="footer-menu-item">About</a></li>
-                            <li><a href="#newsletter" class="footer-menu-item">Newsletter</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="scripts/jquery.waterwheelCarousel.js"></script> 
     <script src="scripts/custom.js"></script>
-    <script src="scripts/slick.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> 
 </body>
 </html>
